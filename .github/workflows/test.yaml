@@ -1,13 +1,21 @@
-name: Mlops Day 2 CI
+name: MLOps Day 2 - Test Training Workflow
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'day2/**'
+      - '.github/workflows/test.yml'
+      - '.github/workflows/test.yaml'
 
 jobs:
   run-training:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: day2
 
     steps:
       - name: Fetch Code
