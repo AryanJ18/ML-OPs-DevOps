@@ -1,0 +1,23 @@
+artifact_path: /Users/aryanjain/Documents/coding-boi/mlops/mlruns/0/models/m-c870d6dc4c644bb39b78f49605de0e20/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-c870d6dc4c644bb39b78f49605de0e20
+model_size_bytes: 113391
+model_uuid: m-c870d6dc4c644bb39b78f49605de0e20
+prompts: null
+run_id: 35cbb839c2e64dfda487cc0d95dfb236
+utc_time_created: '2026-06-04 04:26:38.405148'
